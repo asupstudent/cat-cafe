@@ -1,8 +1,18 @@
 import React from 'react';
+import Header from '../header/header';
+import MainPage from '../../pages/main-page/main-page';
+import Footer from '../footer/footer';
 
 function PageWrapper() {
-  // eslint-disable-next-line react/jsx-no-useless-fragment
-  return <></>;
+  return (
+    <>
+      <Header />
+      <main className='page-wrapper__main'>
+        <MainPage />
+      </main>
+      <Footer />
+    </>
+  );
 }
 
 export default PageWrapper;

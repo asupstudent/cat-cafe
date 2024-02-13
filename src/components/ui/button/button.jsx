@@ -1,8 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import './style.css';
 
-function Button() {
-  // eslint-disable-next-line react/jsx-no-useless-fragment
-  return <></>;
+function Button({ children }) {
+  return (
+    <button className="button" type="button">
+      { children }
+    </button>
+  );
 }
+
+Button.propTypes = {
+  children: PropTypes.node
+};
 
 export default Button;

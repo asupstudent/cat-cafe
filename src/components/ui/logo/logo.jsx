@@ -1,8 +1,14 @@
 import React from 'react';
+import logo from '../../../assets/logo.svg';
+import './style.css';
 
 function Logo() {
-  // eslint-disable-next-line react/jsx-no-useless-fragment
-  return <></>;
+  return (
+    <a href="/" className='logo__link'>
+      <img src={logo} alt="Логотип" />
+      <span className='logo__text'>Котокафе</span>
+    </a>
+  );
 }
 
 export default Logo;

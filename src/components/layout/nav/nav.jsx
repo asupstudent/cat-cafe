@@ -1,8 +1,12 @@
 import React from 'react';
+import Button from '../../ui/button/button';
 
 function Nav() {
-  // eslint-disable-next-line react/jsx-no-useless-fragment
-  return <></>;
+  return (
+    <nav>
+      <Button>Купить билет</Button>
+    </nav>
+  );
 }
 
 export default Nav;
