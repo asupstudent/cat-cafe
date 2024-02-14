@@ -11,7 +11,7 @@ function Button({ children }) {
 }
 
 Button.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.string
 };
 
 export default Button;

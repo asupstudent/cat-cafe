@@ -1,8 +1,8 @@
 import React from 'react';
+import About from '../../blocks/about/about';
 
 function MainPage() {
-  // eslint-disable-next-line react/jsx-no-useless-fragment
-  return <></>;
+  return <About />;
 }
 
 export default MainPage;
