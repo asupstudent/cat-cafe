@@ -15,8 +15,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "eslint": "eslint --ext .jsx --ext .js src/",
     "test": "npm run eslint",
     "eject": "react-scripts eject",
@@ -44,8 +44,10 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@linthtml/linthtml": "^0.9.5",
+    "customize-cra": "^1.0.0",
     "eslint-config-htmlacademy": "^10.0.1",
     "gh-pages": "^6.1.1",
-    "linthtml-config-htmlacademy": "^1.0.14"
+    "linthtml-config-htmlacademy": "^1.0.14",
+    "react-app-rewired": "^2.2.1"
   }
 }
