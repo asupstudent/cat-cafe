@@ -1,6 +1,6 @@
 import React from 'react';
-import About from '../../blocks/about/about';
-import StarsList from '../../blocks/stars-list/stars-list';
+import About from '/src/components/blocks/about/about';
+import StarsList from '/src/components/blocks/stars-list/stars-list';
 
 function MainPage() {
   return (

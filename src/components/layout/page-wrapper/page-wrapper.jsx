@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../header/header';
-import MainPage from '../../pages/main-page/main-page';
-import Footer from '../footer/footer';
+import Header from '/src/components/layout/header/header';
+import MainPage from '/src/components/pages/main-page/main-page';
+import Footer from '/src/components/layout/footer/footer';
 import './style.css';
 
 function PageWrapper() {

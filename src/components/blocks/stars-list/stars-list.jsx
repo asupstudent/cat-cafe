@@ -1,6 +1,6 @@
 import React from 'react';
-import Title from '../../ui/title/title';
-import StarCard from '../../ui/star-card/star-card';
+import Title from '/src/components/ui/title/title';
+import StarCard from '/src/components/ui/star-card/star-card';
 import Button from '/src/components/ui/button/button';
 import './style.css';
 
