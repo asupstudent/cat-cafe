@@ -55,7 +55,7 @@
   height: 16px;
   margin-right: 10px;
   content: "";
-  background: url("../../../../public/assets/pin.svg");
+  background: url("../../../../public/images/decor/pin.svg");
 }
 
 .about::after {
@@ -68,5 +68,5 @@
   width: 446px;
   height: 446px;
   margin: auto;
-  background: url("../../../../public/assets/hero.png");
+  background: url("../../../../public/images/decor/hero.png");
 }

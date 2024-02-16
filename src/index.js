@@ -1,8 +1,10 @@
 import { React, StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from '/src/components/app/app';
+import './index.css';
+import './fonts/inter-v13-cyrillic_latin-regular.woff2';
+import './fonts/inter-v13-cyrillic_latin-700.woff2';
 
-window.assetsPath = `${ process.env.PUBLIC_URL }/assets/`;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
