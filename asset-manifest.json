@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cat-cafe/static/css/main.242b922c.css",
+    "main.css": "/cat-cafe/static/css/main.96c2fb0f.css",
     "main.js": "/cat-cafe/static/js/main.376feac4.js",
     "static/media/hero.png": "/cat-cafe/static/media/hero.1ec02ee642b30a065fde.png",
     "static/media/inter-v13-cyrillic_latin-700.woff2": "/cat-cafe/static/media/inter-v13-cyrillic_latin-700.8800b4fc92b692345a89.woff2",
@@ -10,11 +10,11 @@
     "static/media/pin.svg": "/cat-cafe/static/media/pin.7907e326baab4d05b17d.svg",
     "static/media/mountain.svg": "/cat-cafe/static/media/mountain.f6ee057ff0d791f1227f.svg",
     "index.html": "/cat-cafe/index.html",
-    "main.242b922c.css.map": "/cat-cafe/static/css/main.242b922c.css.map",
+    "main.96c2fb0f.css.map": "/cat-cafe/static/css/main.96c2fb0f.css.map",
     "main.376feac4.js.map": "/cat-cafe/static/js/main.376feac4.js.map"
   },
   "entrypoints": [
-    "static/css/main.242b922c.css",
+    "static/css/main.96c2fb0f.css",
     "static/js/main.376feac4.js"
   ]
 }
