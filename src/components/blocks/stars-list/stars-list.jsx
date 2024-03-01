@@ -5,12 +5,12 @@ import Button from '/src/components/ui/button/button';
 import './style.css';
 import PropTypes from 'prop-types';
 
-function StarsList({ stars }) {
+function StarsList({ stars, level }) {
   return (
     <section className="star-list">
       { stars?.length ? (
         <>
-          <Title>Наши звезды</Title>
+          <Title level={ level }>Наши звезды</Title>
           <ul className="star-list__list">
             {stars.map((star) => (
               <li className="star-list__item" key={ star.id }>
@@ -18,7 +18,7 @@ function StarsList({ stars }) {
               </li>
             ))}
           </ul>
-          <Button minWidth={353}>Купить билет</Button>
+          <Button minWidth={353} link="/buy">Купить билет</Button>
         </>
       ) : null }
     </section>
@@ -27,6 +27,7 @@ function StarsList({ stars }) {
 
 StarsList.propTypes = {
   stars: PropTypes.array,
+  level: PropTypes.string,
 };
 
 export default StarsList;

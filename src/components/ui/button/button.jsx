@@ -1,18 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './style.css';
-
-function Button({ children, minWidth }) {
+import { StyledButton } from './style';
+function Button({ children, minWidth, link, className }) {
   return (
-    <button className="button" style={{minWidth: minWidth}} type="button">
+    <StyledButton $minWidth={minWidth} {...(link ? { href: link } : { as: 'button', type: 'button' })} className={ className }>
       { children }
-    </button>
+    </StyledButton>
   );
 }
 
 Button.propTypes = {
   children: PropTypes.string,
-  minWidth: PropTypes.number
+  minWidth: PropTypes.number,
+  link: PropTypes.string,
+  className: PropTypes.string
 };
 
 export default Button;
