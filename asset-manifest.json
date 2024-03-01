@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cat-cafe/static/css/main.50a11874.css",
-    "main.js": "/cat-cafe/static/js/main.346785fb.js",
+    "main.js": "/cat-cafe/static/js/main.9fa893ec.js",
     "static/media/hero.png": "/cat-cafe/static/media/hero.1ec02ee642b30a065fde.png",
     "static/media/inter-v13-cyrillic_latin-700.woff2": "/cat-cafe/static/media/inter-v13-cyrillic_latin-700.8800b4fc92b692345a89.woff2",
     "static/media/inter-v13-cyrillic_latin-regular.woff2": "/cat-cafe/static/media/inter-v13-cyrillic_latin-regular.73512c15313ceb60da86.woff2",
@@ -12,10 +12,10 @@
     "index.html": "/cat-cafe/index.html",
     "static/media/mountain.svg": "/cat-cafe/static/media/mountain.f6ee057ff0d791f1227f.svg",
     "main.50a11874.css.map": "/cat-cafe/static/css/main.50a11874.css.map",
-    "main.346785fb.js.map": "/cat-cafe/static/js/main.346785fb.js.map"
+    "main.9fa893ec.js.map": "/cat-cafe/static/js/main.9fa893ec.js.map"
   },
   "entrypoints": [
     "static/css/main.50a11874.css",
-    "static/js/main.346785fb.js"
+    "static/js/main.9fa893ec.js"
   ]
 }
