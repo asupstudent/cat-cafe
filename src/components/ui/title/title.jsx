@@ -25,13 +25,13 @@ function Title({
 }) {
   return (
     <StyledTitle as={ `h${level}` } size={ size } className={ className }>
-      {children}
+      { children }
     </StyledTitle>
   );
 }
 
 Title.propTypes = {
-  level: PropTypes.number,
+  level: PropTypes.string,
   children: PropTypes.string,
   size: PropTypes.string,
   className: PropTypes.string,

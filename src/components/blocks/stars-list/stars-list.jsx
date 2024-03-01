@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '/src/components/ui/title/title';
 import StarCard from '/src/components/ui/star-card/star-card';
 import Button from '/src/components/ui/button/button';
-import './style.css';
+import './styles.css';
 import PropTypes from 'prop-types';
 
 function StarsList({ stars, level }) {
@@ -18,7 +18,7 @@ function StarsList({ stars, level }) {
               </li>
             ))}
           </ul>
-          <Button minWidth={353} link="/buy">Купить билет</Button>
+          <Button minWidth={ 353 } link="/buy">Купить билет</Button>
         </>
       ) : null }
     </section>

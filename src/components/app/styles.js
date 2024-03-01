@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: url(${InterRegular}) format('woff2');
+    src: url(${ InterRegular }) format('woff2');
   }
 
   @font-face {
@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    src: url(${Inter700}) format('woff2');
+    src: url(${ Inter700 }) format('woff2');
   }
 
   html {

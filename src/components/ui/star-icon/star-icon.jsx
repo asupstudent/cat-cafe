@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './style.css';
+import './styles.css';
 
 export const CatFeature = {
   NEW: 'new',
@@ -36,7 +36,7 @@ function StarIcon({ className = '', feature }) {
       className={`star-icon ${ className }`}
       style={{ backgroundColor: options.bgColor }}
     >
-      {options.text}
+      { options.text }
     </span>
   ) : null;
 }

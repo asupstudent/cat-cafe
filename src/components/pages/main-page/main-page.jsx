@@ -7,8 +7,8 @@ import PropTypes from 'prop-types';
 function MainPage({ stars }) {
   return (
     <>
-      <About label={TitleLevel.H1}/>
-      <StarsList stars={stars} level={TitleLevel.H2}/>
+      <About label={ TitleLevel.H1 }/>
+      <StarsList stars={ stars } level={ TitleLevel.H2 }/>
     </>
   );
 }
