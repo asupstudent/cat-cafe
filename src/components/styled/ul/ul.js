@@ -20,7 +20,7 @@ const gridList = css`
 const Ul = styled.ul`
   margin: 0;
   padding: 0;
-  ${(props) => (props.isGridList ? gridList : '')}
+  ${(props) => (props.$isGridList ? gridList : '')}
 `;
 
 export default Ul;

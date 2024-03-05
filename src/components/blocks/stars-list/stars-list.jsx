@@ -2,26 +2,26 @@ import React from 'react';
 import Title from '/src/components/ui/title/title';
 import StarCard from '/src/components/ui/star-card/star-card';
 import Button from '/src/components/ui/button/button';
-import './styles.css';
 import PropTypes from 'prop-types';
+import { StyledStarsSection, StyledStarsList, StyledStarsItem } from './styles';
 
 function StarsList({ stars, level }) {
   return (
-    <section className="star-list">
+    <StyledStarsSection>
       { stars?.length ? (
         <>
           <Title level={ level }>Наши звезды</Title>
-          <ul className="star-list__list">
+          <StyledStarsList $isGridList>
             {stars.map((star) => (
-              <li className="star-list__item" key={ star.id }>
+              <StyledStarsItem key={ star.id }>
                 <StarCard { ...star }/>
-              </li>
+              </StyledStarsItem>
             ))}
-          </ul>
+          </StyledStarsList>
           <Button minWidth={ 353 } link="/buy">Купить билет</Button>
         </>
       ) : null }
-    </section>
+    </StyledStarsSection>
   );
 }
 

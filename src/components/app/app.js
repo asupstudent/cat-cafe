@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <PageWrapper stars={ starList }/>;
+      <PageWrapper stars={ starList }/>
     </>
   );
 }
