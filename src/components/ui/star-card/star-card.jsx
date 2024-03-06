@@ -1,7 +1,6 @@
 import React from 'react';
 import Title, { TitleSize, TitleLevel } from '/src/components/ui/title/title';
-import StarIcon from '/src/components/ui/star-icon/star-icon';
-import './styles.css';
+import { StyledStarCard, StyledStarIcon, Figure, Image, Text } from './styles';
 import PropTypes from 'prop-types';
 
 function StarCard({
@@ -11,14 +10,14 @@ function StarCard({
   image //путь к картинке
 }) {
   return (
-    <article className='star-card'>
-      <figure className='star-card__figure'>
-        <img className="star-card__image" src={`${ process.env.PUBLIC_URL }${ image }`} width={ 313 } height={ 320 } alt='Изображение кота.'/>
-        <StarIcon className="star-card__icon" feature={ feature }/>
-      </figure>
+    <StyledStarCard>
+      <Figure>
+        <Image src={`${ process.env.PUBLIC_URL }${ image }`} width={ 313 } height={ 320 } alt='Изображение кота.'/>
+        <StyledStarIcon feature={ feature }/>
+      </Figure>
       <Title size={ TitleSize.SMALL } level={ TitleLevel.H3 }>{ name }</Title>
-      <p className="star-card__text" dangerouslySetInnerHTML={{ __html: about }} />
-    </article>
+      <Text dangerouslySetInnerHTML={{ __html: about }} />
+    </StyledStarCard>
   );
 }
 
