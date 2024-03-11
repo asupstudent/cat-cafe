@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { Section, Li, Ul } from '/src/components/styled';
-import starsImage from '/src/assets/mountain.svg';
-import startLeft from '/src/assets/paw.svg';
-import startRight from '/src/assets/leaves.svg';
+import starsBackground from '/src/assets/stars-background.svg';
+import startLeft from '/src/assets/stars-left.svg';
+import startRight from '/src/assets/stars-right.svg';
 
 export const StyledStarsSection = styled(Section)`
   padding-bottom: 80px;
   background-color: ${(props) => props.theme.colorForDarkBackground};
-  background-image: url(${starsImage});
+  background-image: url(${starsBackground});
   background-position: left bottom;
   background-size: 449px 304px;
   background-repeat: no-repeat;

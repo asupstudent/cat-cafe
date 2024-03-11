@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Section } from '/src/components/styled';
-import aboutImage from '/src/assets/hero.png';
-import mapMark from '/src/assets/pin.svg';
+import aboutImage from '/src/assets/about.png';
+import mapMark from '/src/assets/map-mark.svg';
 
 const Paragraph = styled.p`
   margin: 0;

@@ -31,7 +31,7 @@ function Title({
 }
 
 Title.propTypes = {
-  level: PropTypes.string,
+  level: PropTypes.number,
   children: PropTypes.string,
   size: PropTypes.string,
   className: PropTypes.string,
