@@ -5,17 +5,37 @@ const gallery = [
     alt: 'фото кота 1'
   },
   {
-    id: 0,
+    id: 1,
     src: '/images/gallery/2.jpg',
     alt: 'фото кота 2'
   },
   {
-    id: 0,
+    id: 2,
     src: '/images/gallery/3.jpg',
     alt: 'фото кота 3'
   },
   {
-    id: 0,
+    id: 3,
+    src: '/images/gallery/4.jpg',
+    alt: 'фото кота 4'
+  },
+  {
+    id: 4,
+    src: '/images/gallery/1.jpg',
+    alt: 'фото кота 1'
+  },
+  {
+    id: 5,
+    src: '/images/gallery/2.jpg',
+    alt: 'фото кота 2'
+  },
+  {
+    id: 6,
+    src: '/images/gallery/3.jpg',
+    alt: 'фото кота 3'
+  },
+  {
+    id: 7,
     src: '/images/gallery/4.jpg',
     alt: 'фото кота 4'
   }
