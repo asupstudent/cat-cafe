@@ -6,12 +6,10 @@ import PropTypes from 'prop-types';
 
 function CafeGallery({ slides }) {
   return (
-    <>
-      <StyledSection>
-        <StyledTitle level={2} size={TitleSize.BIG}>Галерея нашего кафе</StyledTitle>
-      </StyledSection>
+    <StyledSection>
+      <StyledTitle level={2} size={TitleSize.BIG}>Галерея нашего кафе</StyledTitle>
       <Gallery slides={ slides } />
-    </>
+    </StyledSection>
   );
 }
 

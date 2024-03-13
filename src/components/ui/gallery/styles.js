@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Swiper } from 'swiper/react';
-
+import Button from '/src/components/ui/button/button';
+import { ReactComponent as LeftArrow } from '/src/assets/left-arrow.svg';
 
 export const StyledSwiper = styled(Swiper)`
   width: 726px;
@@ -35,4 +36,32 @@ export const SliderWrapper = styled.div`
   margin: 0 auto;
   width: 726px;
   position: relative;
+`;
+
+export const StyledButtonLeft = styled(Button)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: -94px;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  padding: 0;
+
+  &:hover {
+    box-shadow: none;
+  }
+`;
+
+export const StyledButtonRight = styled(StyledButtonLeft)`
+  right: -94px;
+  left: auto;
+`;
+
+export const RightArrow = styled(LeftArrow)`
+  transform: rotate(180deg);
 `;

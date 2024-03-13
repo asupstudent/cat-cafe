@@ -1,22 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { SwiperSlide } from 'swiper/react';
-import { Thumbs } from 'swiper/modules';
+import { Thumbs, Navigation, FreeMode } from 'swiper/modules';
 import PropTypes from 'prop-types';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
+import { ReactComponent as LeftArrow } from '/src/assets/left-arrow.svg';
 
 import {
   SliderWrapper,
   StyledSwiper,
   StyledSwiperMini,
   StyleSlide,
-  StyleSlideMini
+  StyleSlideMini,
+  StyledButtonLeft,
+  StyledButtonRight,
+  RightArrow
 } from './styles';
 
 function Gallery({ slides = [] }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [activeSlide, setActiveSlide] = useState(0);
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
 
   return (
     <>
@@ -47,9 +53,17 @@ function Gallery({ slides = [] }) {
           }}
           spaceBetween={ 20 }
           slidesPerView={ 4 }
+          modules={[Navigation, FreeMode, Thumbs]}
           freeMode
-          watchSlidesProgress
           loop
+          navigation={{
+            prevEl: navigationPrevRef.current,
+            nextEl: navigationNextRef.current
+          }}
+          onBeforeInit={(swiper) => {
+            swiper.params.navigation.prevEl = navigationPrevRef.current;
+            swiper.params.navigation.nextEl = navigationNextRef.current;
+          }}
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={ slide.id }>
@@ -57,6 +71,12 @@ function Gallery({ slides = [] }) {
             </SwiperSlide>
           ))}
         </StyledSwiperMini>
+        <StyledButtonLeft ref={navigationPrevRef}>
+          <LeftArrow />
+        </StyledButtonLeft>
+        <StyledButtonRight ref={navigationNextRef}>
+          <RightArrow />
+        </StyledButtonRight>
       </SliderWrapper>
     </>
   );

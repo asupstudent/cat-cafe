@@ -1,17 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { forwardRef } from 'react';
 import { StyledButton } from './styles';
+import PropTypes from 'prop-types';
 
-function Button({ children, minWidth, link, className }) {
-  return (
-    <StyledButton $minWidth={ minWidth } { ...(link ? { href: link } : { as: 'button', type: 'button' }) } className={ className }>
-      { children }
-    </StyledButton>
-  );
-}
+const Button = forwardRef(({ children, minWidth, link, className }, ref) => (
+  <StyledButton ref={ ref } $minWidth={ minWidth } { ...(link ? { href: link } : { as: 'button', type: 'button' }) } className={ className }>
+    { children }
+  </StyledButton>
+));
+
+Button.displayName = 'Button';
 
 Button.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.any,
   minWidth: PropTypes.number,
   link: PropTypes.string,
   className: PropTypes.string
