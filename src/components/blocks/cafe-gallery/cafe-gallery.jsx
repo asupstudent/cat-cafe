@@ -5,12 +5,12 @@ import Gallery from '/src/components/ui/gallery/gallery';
 import PropTypes from 'prop-types';
 
 function CafeGallery({ slides }) {
-  return (
+  return slides && slides.length ? (
     <StyledSection>
       <StyledTitle level={2} size={TitleSize.BIG}>Галерея нашего кафе</StyledTitle>
       <Gallery slides={ slides } />
     </StyledSection>
-  );
+  ) : null;
 }
 
 CafeGallery.propTypes = {

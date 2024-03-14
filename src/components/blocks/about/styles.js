@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Section } from '/src/components/styled';
-import aboutImage from '/src/assets/about.png';
+import aboutImage from '/src/assets/about.svg';
 import mapMark from '/src/assets/map-mark.svg';
 
 const Paragraph = styled.p`
