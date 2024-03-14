@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cat-cafe/static/css/main.97744a41.css",
-    "main.js": "/cat-cafe/static/js/main.1ecce90c.js",
+    "main.js": "/cat-cafe/static/js/main.fb775b55.js",
     "static/media/inter-v13-cyrillic_latin-700.woff2": "/cat-cafe/static/media/inter-v13-cyrillic_latin-700.8800b4fc92b692345a89.woff2",
     "static/media/inter-v13-cyrillic_latin-regular.woff2": "/cat-cafe/static/media/inter-v13-cyrillic_latin-regular.73512c15313ceb60da86.woff2",
     "static/media/gallery-right.svg": "/cat-cafe/static/media/gallery-right.2011efd46254aad544d7b790ba3313b4.svg",
@@ -11,10 +11,10 @@
     "static/media/gallery-background.svg": "/cat-cafe/static/media/gallery-background.102870abc595d676570f5e4ed919ec39.svg",
     "static/media/left-arrow.svg": "/cat-cafe/static/media/left-arrow.42a1b404fe7fa9cd73a8da1d70fd90b3.svg",
     "main.97744a41.css.map": "/cat-cafe/static/css/main.97744a41.css.map",
-    "main.1ecce90c.js.map": "/cat-cafe/static/js/main.1ecce90c.js.map"
+    "main.fb775b55.js.map": "/cat-cafe/static/js/main.fb775b55.js.map"
   },
   "entrypoints": [
     "static/css/main.97744a41.css",
-    "static/js/main.1ecce90c.js"
+    "static/js/main.fb775b55.js"
   ]
 }
