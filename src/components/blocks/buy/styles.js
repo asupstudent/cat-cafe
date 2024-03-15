@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Section } from '/src/components/styled';
-import buyBackground from '/src/assets/buy-background.svg';
+import buyRightBackground from '/src/assets/buy-right-background.svg';
 import buyTopBackground from '/src/assets/buy-top-background.svg';
 import buyLeftBackground from '/src/assets/buy-left-background.svg';
 import Title from '/src/components/ui/title/title';
@@ -9,7 +9,7 @@ export const StyledSection = styled(Section)`
   display: block;
   padding-bottom: 100px;
   background-color: ${(props) => props.theme.colorForLightBackground};
-  background-image: url(${ buyBackground });
+  background-image: url(${ buyLeftBackground });
   background-position: left bottom;
   background-size: 349px 406px;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ export const StyledSection = styled(Section)`
     width: 443px;
     height: 468px;
     content: "";
-    background-image: url(${ buyLeftBackground });
+    background-image: url(${ buyRightBackground });
     background-size: contain;
     background-repeat: no-repeat;
   }
